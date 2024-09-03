@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.header-section {
+    background-color: #282c34;
+    padding: 1rem 0;
+    color: #fff;
+    position: relative;
+    /* To position the toggle button */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.header-section h1 {
+    margin-left: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Toggle Button */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.toggle-button div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #61dafb;
+}
+
+
+/* Continue with the rest of your styles */
+/* profile-section */
+.profile.adjustment {
+    background-color: #282c34;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.profile .icon a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.intro-box h3,
+.intro-box h1 {
+    margin: 10px 0;
+}
+
+.intro-box p {
+    margin: 15px 0;
+    max-width: 600px;
+    font-size: 1.2rem;
+}
+
+.intro-box #button-1,
+.intro-box #button-2 {
+    background-color: #61dafb;
+    border: none;
+    padding: 10px 20px;
+    color: #282c34;
+    margin: 15px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.intro-box #button-1:hover,
+.intro-box #button-2:hover {
+    background-color: #21a1f1;
+}
+
+.img-sec img {
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+/* about-section */
+
+.about.adjustment {
+    padding: 50px 0;
+}
+
+.more-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-more .boxes-container {
+    flex: 1;
+}
+
+.boxes {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-obj {
+    flex: 1;
+    padding: 0 20px;
+}
+
+/* projects -section */
+
+.projects-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects-container main {
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* skills-section */
+.skills-container {
+    background-color: #282c34;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.skills-section .skills-sec {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #333;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skills-section .skills-sec:hover {
+    transform: translateY(-10px);
+}
+
+/* contact-section */
+.contact-container {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.contact-container h1 {
+    text-align: center;
+}
+
+.form-submission {
+    flex-direction: column;
+}
+
+.form-submission .input-type {
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-submission button {
+    padding: 15px;
+    background-color: #61dafb;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-submission button:hover {
+    background-color: #21a1f1;
+}
+
+.nav-links.button {
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: #282c34;
+}
+
+.nav-links.button a {
+    color: #fff;
+}
+
+.nav-links.button a:hover {
+    color: #61dafb;
+    text-decoration: underline;
+}

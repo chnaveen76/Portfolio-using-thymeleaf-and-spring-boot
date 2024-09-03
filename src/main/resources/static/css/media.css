@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    /* Responsive navigation */
+    .toggle-button {
+        display: flex; /* Show toggle button on mobile */
+        flex-direction: column;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links on mobile initially */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #282c34;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+        z-index: 1000; /* Ensure the nav is on top of other content */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show navigation links when toggle is active */
+    }
+
+    .nav-links a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    header.header-section {
+        justify-content: space-between; /* Align toggle button and header title */
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    header.header-section h1 {
+        margin-left: 0; /* Center align the header title on mobile */
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .header-section,
+    .profile.adjustment,
+    .about.adjustment,
+    .skills-container,
+    .contact-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-more {
+        flex-direction: column;
+    }
+
+    .intro-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .img-sec img {
+        max-width: 200px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Styles for smaller screens (425px) */
+@media only screen and (max-width: 430px) {
+    .header-section {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links on mobile initially */
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        background-color: #282c34;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+        z-index: 1000; /* Ensure the nav is on top of other content */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show navigation links when toggle is active */
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        font-size: 0.9rem;
+    }
+
+    .profile.adjustment {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .intro-box h3 {
+        font-size: 1rem;
+    }
+
+    .intro-box h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro-box p {
+        font-size: 0.9rem;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    .img-sec img {
+        max-width: 150px;
+        margin-bottom: 15px;
+    }
+
+    .about.adjustment,
+    .skills-container,
+    .contact-container {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .boxes-container {
+        flex-direction: column;
+    }
+
+    .boxes {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .boxes-container .boxes:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .form-submission {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .form-submission .input-type,
+    .form-submission button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-submission button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
